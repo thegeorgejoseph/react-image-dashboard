@@ -9,8 +9,7 @@ Using states to manage the requested images \
 Using Material UI to design the front-end of the application \
 Using GridLists and Dialog Box to show the image as well as pop up the image on click
 
-![Uploading image.png…]()
-
+<img width="1430" alt="image" src="https://user-images.githubusercontent.com/37734939/116001123-9f771080-a610-11eb-9878-4d7c2396fe68.png">
 
 
 ## Available Scripts
