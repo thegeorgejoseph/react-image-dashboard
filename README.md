@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Concepts Learned
+
+Accessing the Pixabay API using axios to retrieve images \
+Using states to manage the requested images \
+Using Material UI to design the front-end of the application \
+Using GridLists and Dialog Box to show the image as well as pop up the image on click
+
+![Uploading image.png…]()
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
