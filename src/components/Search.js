@@ -28,11 +28,16 @@ const Search = () => {
     }
     const [state,setState] = useState(initialState);
     const onTextChange = (e) => {
-    
-        setState(prevState => ({...prevState,searchText:e.target.value}))
-        axios.get(`${state.url}/?key=${state.key}&q=${state.searchText}&image_type=photo&per_page=${state.amount}&safesearch=true`)
-        .then(res => setState((prevState) => ({...prevState,images:res.data.hits})))
-        .catch(err => console.log(err))
+        if (e.target.value === ''){
+            setState(prevState => ({...prevState,images:[],searchText:''}))
+        }else{
+            setState(prevState => ({...prevState,searchText:e.target.value}))
+            axios.get(`${state.url}/?key=${state.key}&q=${state.searchText}&image_type=photo&per_page=${state.amount}&safesearch=true`)
+            .then(res => setState((prevState) => ({...prevState,images:res.data.hits})))
+            .catch(err => console.log(err))
+
+        }
+        
 
     }
     const onAmountChange = (e) => {
