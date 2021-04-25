@@ -58,7 +58,7 @@ const Search = () => {
                 <MenuItem value={50}>50</MenuItem>
             </Select>
 
-            {state.images.length > 0 ? <ImageResults /> : <h1 style={{height:'px',width:'20%',margin:'auto'}}>Images Not Found</h1>}
+            {state.images.length > 0 ? <ImageResults images={state.images}/> : <h1 style={{height:'px',width:'20%',margin:'auto'}}>Images Not Found</h1>}
         </div>
     )
 }
